@@ -1,0 +1,227 @@
+import java.sql.SQLOutput;
+import java.util.*;
+public class array1{
+static void array(int n,int arr[]){
+    int sum=0;
+for(int i=0;i<n;i++){
+    sum=sum+arr[i];
+}
+    System.out.println(" sum value :"+sum);
+
+}
+
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        array(n,arr);
+    }
+}
+--------------------*----------------------------*-------------------------------*
+import java.util.Scanner;
+
+public class FibonacciSeries {
+    static void array(int arr[]) {
+        int max = arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (max > arr[i]) {
+                max = arr[i];
+            }
+        }
+        System.out.println("Maximum :" + max);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        array(arr);
+    }
+}
+
+----------------------*--------------------------*-----------------------------------*
+public class integer_count_value {
+
+    public static void main(String[] args) {
+        int n = 1545575865, count = 0, odd = 0, even = 0;
+        while (n > 0) {
+            int temp = n % 10;
+            count += 1;
+            if (count % 2 != 0) {
+                odd += temp;
+            } else {
+                even += temp;
+            }
+            n = n / 10;
+        }
+        System.out.println(odd == even ? "lucky number" : "not a lucky nuber");
+    }
+
+    }
+
+
+
+
+---------------*----------------------------------------------*---------------------
+/*    Class C
+        ^
+        |
+      Class B
+        ^
+        |
+      main
+     Class A
+ */
+class process {
+
+    void add(int a,int b){
+
+        System.out.println(a+b);
+    }
+    }
+class parocess2 extends process {
+    void sub(int a,int b){
+        System.out.println(a - b);
+    }}
+
+    public class multi_level extends parocess2 {
+    public static void main(String[] args) {
+    multi_level m1=new multi_level();
+     m1.sub(10,5);
+     m1.add(10,20);
+    }
+}
+----------------------------------*--------------------------------------------*--------------------------
+public class pattern2 {
+    public static void main(String[] args){
+        int n=3;
+        for(int i=1;i<=1;i++){
+            for(int j=1;j<=3;j++){
+                System.out.print("@"+" ");
+            }
+            System.out.println();
+            for(int j=1;j<=3;j++){
+                System.out.print("?"+" ");
+            }
+            System.out.println();
+            for(int j=1;j<=3;j++){
+                System.out.print(">"+" ");
+            }
+            System.out.println();
+        }
+
+    }
+
+}
+-------------------------------------*-------------------------------------------------*------------------------*
+import java.util.*;
+public class popular {
+    public static void main(String[] arg){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int max=0,max_ele=0,co=0;
+        int[] arr=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++){
+            int count=1;
+            for(int j=i+1;j<n;j++) {
+                if (arr[i] == arr[j]) {
+                    count++;;
+
+                }
+            }
+            if(count>max){
+                max=count;
+                co=count;
+                max_ele=arr[i];
+            }
+        }
+        System.out.println("Popular :"+max_ele+" Count :"+co);
+    }
+}
+-------------------------*----------------------------------------*---------------------------------*-----------------
+import java.util.*;
+public class second_string_reverse {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String s1=s.nextLine();
+        String s2=s.nextLine();
+        StringBuffer b=new StringBuffer(s2);
+        String s3=b.reverse().toString();
+        System.out.print(s1+" "+s3);
+    }
+
+}
+----------------------------------------*------------------------*-------------------------------*----------------------
+import jdk.nashorn.internal.parser.JSONParser;
+
+import java.util.Scanner;
+
+class state1{
+ void cal(int a,int b){
+     System.out.println(a+b);
+ }
+}
+public class single_inhertance extends state1 {
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+        int a= 20;
+        int b=20;
+        single_inhertance ip1=new single_inhertance();
+        ip1.cal(a,b);
+    }
+}
+--------------------------------------*-------------------------------------------*------------------------------------------
+import java.util.*;
+public class string_same_letter_remove {
+        public static void main(String[] args) {
+            Scanner s=new Scanner(System.in);
+            String s1=s.nextLine();
+           // String s2=s.nextLine();
+            for(int i=0;i<s1.length();i++)
+            {
+                int count=0;
+                for(int j=i+1;j<s1.length();j++)
+                {
+                    if(s1.charAt(i)==s1.charAt(j)) {
+                        count++;
+                    }
+                }
+                if(count>=1)
+                {
+                    System.out.print(s1.charAt(i));
+                }
+  }
+        }
+    }
+
+------------------------*------------------------------------------*----------------------------------------------*
+public class pattern2 {
+    public static void main(String[] args){
+        int n=3;
+        for(int i=1;i<=1;i++){
+            for(int j=1;j<=3;j++){
+                System.out.print("@"+" ");
+            }
+            System.out.println();
+            for(int j=1;j<=3;j++){
+                System.out.print("?"+" ");
+            }
+            System.out.println();
+            for(int j=1;j<=3;j++){
+                System.out.print(">"+" ");
+            }
+            System.out.println();
+        }
+
+    }
+
+}

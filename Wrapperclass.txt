@@ -1,0 +1,32 @@
+public class Wrapperclass {
+    public static void main(String[] args) {
+        byte a=1;
+        Byte ob=new Byte(a);
+        System.out.println(ob);
+
+        int b=10;
+        Integer ob2=new Integer(b);
+        System.out.println(ob2);
+
+        float c= 18.6F;
+        Float ob3=new Float(c);
+        System.out.println(ob3);
+
+        Short a1=  10;
+        short j=a1;
+        System.out.println(j);
+
+        char ch='N';
+        Character ch1=ch;
+        System.out.println(ch1);
+
+        double d=123.21;
+        Double d1=d;
+        System.out.println(d1);
+
+        long l=123655;
+        Long l1=l;
+        System.out.println(l1);
+}
+
+}
